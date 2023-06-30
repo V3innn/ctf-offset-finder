@@ -11,7 +11,7 @@ CTF Offset Finder is a Python script that utilizes pwntools to find the offset f
 ## Requirements
 
 - Python 3.6 or above
-- pwntools library (`pip install pwntools`)
+- pwntools library (`sudo pip install pwntools`)
 
 ## Usage
 
