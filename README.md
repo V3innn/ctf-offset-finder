@@ -31,7 +31,7 @@ cd ctf-offset-finder
 
 4. Run the script:
 ```shell
-python offset_finder.py
+python ctf-offset-finder.py
 ```
 
 The offset for the target function will be printed to the console.
