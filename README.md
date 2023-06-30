@@ -19,17 +19,23 @@ CTF Offset Finder is a Python script that utilizes pwntools to find the offset f
 
 ```shell
 git clone https://github.com/Leasss/ctf-offset-finder.git
+shell
+```
 
 2. Navigate to the project directory:
 
 ```shell
 cd ctf-offset-finder
+shell
+```
 
 3. Modify the script offset_finder.py to specify the path to your target      binary and the name of the vulnerable function.
 
 4. Run the script:
 ```shell
 python offset_finder.py
+shell
+```
 
 The offset for the target function will be printed to the console.
 
