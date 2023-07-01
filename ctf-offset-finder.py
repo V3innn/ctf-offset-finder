@@ -21,5 +21,5 @@ def find_offset(binary_path, target_func):
 # Usage example
 # Assuming 'vuln' is in the current directory, if not write the fullpath
 binary_path = './vuln' # The name of the binary
-target_func = 'win' # The function that we want to taeget
+target_func = 'win' # The function that we want to target
 find_offset(binary_path, target_func)
