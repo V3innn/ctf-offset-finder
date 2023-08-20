@@ -18,7 +18,7 @@ CTF Offset Finder is a Python script that utilizes pwntools to find the offset f
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/Leasss/ctf-offset-finder.git
+git clone https://github.com/V3innn/ctf-offset-finder.git
 ```
 
 2. Navigate to the project directory:
@@ -31,7 +31,7 @@ cd ctf-offset-finder
 
 4. Run the script:
 ```shell
-python ctf-offset-finder.py
+python3 ctf-offset-finder.py
 ```
 
 The offset for the target function will be printed to the console.
