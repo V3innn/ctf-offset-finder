@@ -1,5 +1,17 @@
 from pwn import *
 
+def banner():
+    print("                                     .-')      ('-.   .-') _                                .-') _  _ .-') _     ('-.     ('-.  _  .-')   ")
+    print("                                    ( OO ).  _(  OO) (  OO) )                              ( OO ) )( (  OO) )  _(  OO)  _(  OO)( \( -O )  ")
+    print(" .-'),-----.    ,------.   ,------.(_)---\_)(,------./     '._          ,------.,-.-') ,--./ ,--,'  \     .'_ (,------.(,------.,------.  ")
+    print("( OO'  .-.  '('-| _.---'('-| _.---'/    _ |  |  .---'|'--...__)      ('-| _.---'|  |OO)|   \ |  |\  ,`'--..._) |  .---' |  .---'|   /`. ' ")
+    print("/   |  | |  |(OO|(_\    (OO|(_\    \  :` `.  |  |    '--.  .--'      (OO|(_\    |  |  \|    \|  | ) |  |  \  ' |  |     |  |    |  /  | | ")
+    print("\_) |  |\|  |/  |  '--. /  |  '--.  '..`''.)(|  '--.    |  |         /  |  '--. |  |(_/|  .     |/  |  |   ' |(|  '--. (|  '--. |  |_.' | ")
+    print("  \ |  | |  |\_)|  .--' \_)|  .--' .-._)   \ |  .--'    |  |         \_)|  .--',|  |_.'|  |\    |   |  |   / : |  .--'  |  .--' |  .  '.' ")
+    print("   `'  '-'  '  \|  |_)    \|  |_)  \       / |  `---.   |  |           \|  |_)(_|  |   |  | \   |   |  '--'  / |  `---. |  `---.|  |\  \  ")
+    print("     `-----'    `--'       `--'     `-----'  `------'   `--'            `--'    `--'   `--'  `--'   `-------'  `------' `------'`--' '--' ")
+
+
 def find_offset(binary_path, target_func):
 
     p = process(binary_path)
@@ -18,8 +30,11 @@ def find_offset(binary_path, target_func):
 
     p.close()
 
-# Usage example
-# Assuming 'vuln' is in the current directory, if not write the fullpath
-binary_path = './vuln' # The name of the binary
-target_func = 'win' # The function that we want to target
-find_offset(binary_path, target_func)
+def main():
+    banner()
+    binary_path = input("Enter the path to the binary: ").strip()
+    target_func = input("Enter the target function name: ").strip()
+    find_offset(binary_path, target_func)
+
+if __name__ == "__main__":
+    main()
